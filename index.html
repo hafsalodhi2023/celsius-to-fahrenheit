@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="p-div">
+        <p class="head-p">CONVERT CELSIUS TO FAHRENHEIT HERE</p>
+      </div>
+      <div class="inputs">
+        <label>CELSIUS</label>
+        <input type="email" id="data-input" placeholder="Celsius..." />
+        <label class="label-2">CONVERT TO FAHRENHEIT</label>
+        <button onclick="convert()">CONVERT</button>
+        <p id="result"></p>
+      </div>
+    </div>
+  </body>
+  <script>
+    function convert() {
+      var celsius = document.getElementById("data-input").value;
+      var a = 1.8;
+      var b = 32;
+      var fahrenheit = celsius * a + b;
+      result = document.getElementById("result").innerText = `RESULT :
+    ${fahrenheit} FAHRENHEIT`;
+    }
+  </script>
+</html>
